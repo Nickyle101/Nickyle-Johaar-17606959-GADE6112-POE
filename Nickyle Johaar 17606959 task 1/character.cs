@@ -69,7 +69,7 @@ namespace Nickyle_Johaar_17606959_task_1
             get { return moveToPosition; }
             set { moveToPosition = value; }
         }
-        // the item loot method POE
+        // this allows the player to loot dead enemies and gain gold
         public virtual void ItemLooted(character target)
         {
             GoldPickUp += target.GoldPickUp;
