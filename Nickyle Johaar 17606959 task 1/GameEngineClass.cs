@@ -34,7 +34,8 @@ namespace Nickyle_Johaar_17606959_task_1
     }
     class GameEngineClass
     {
-        private MapClass mapDisplay = new MapClass(30, 30, 30, 60, 10, 10);
+        //update map
+        private MapClass mapDisplay = new MapClass(30, 40, 28, 50, 12, 20);
 
         public MapClass MapDisplay
         {
