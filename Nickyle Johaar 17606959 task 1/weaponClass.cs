@@ -8,7 +8,7 @@ namespace Nickyle_Johaar_17606959_task_1
 {
     class weaponClass:ItemClass
     {
-       
+       // this is the weapon class that holds all the protected values
         protected TypeOfWeaponUsed weaponSelectionType;//weapon type
         protected int costOfWeapon;//cost
         protected int weaponDamageAmount;//Damage
@@ -42,17 +42,18 @@ namespace Nickyle_Johaar_17606959_task_1
             get { return costOfWeapon; }
             set { costOfWeapon = value; }
         }
+        public string WeaponCharacter
+        {
+            get { return weaponCharacter; }
+            set { weaponCharacter = value; }
+        }
         public int WeaponDamageAmount//weapon damage
         {
             get { return weaponDamageAmount; }
             set { weaponDamageAmount = value; }
         }
         
-        public string WeaponCharacter
-        {
-            get { return weaponCharacter; }
-            set { weaponCharacter = value; }
-        }
+        
 
         
     }
