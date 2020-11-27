@@ -24,7 +24,7 @@ namespace Nickyle_Johaar_17606959_task_1
         {
             if (weaponSelectionType == TypeOfWeaponUsed.Rifle)
             {
-                weaponSelectionType = TypeOfWeaponUsed.Rifle;
+                base.weaponSelectionType = TypeOfWeaponUsed.Rifle;
                 weaponDurability = 3;
                 base.weaponRange = 3;
                 weaponDamageAmount = 5;
@@ -33,9 +33,9 @@ namespace Nickyle_Johaar_17606959_task_1
             }
             if (weaponSelectionType == TypeOfWeaponUsed.LongBow)
             {
-                weaponSelectionType = TypeOfWeaponUsed.LongBow;
+                base.weaponSelectionType = TypeOfWeaponUsed.LongBow;
                 base.weaponRange = 2;
-                weaponDamageAmount = 4;
+               weaponDamageAmount = 4;
                 costOfWeapon = 6;
                 weaponDurability = 4;
                 weaponSelected = "LongBow";

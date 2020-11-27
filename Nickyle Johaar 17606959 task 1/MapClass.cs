@@ -55,25 +55,26 @@ namespace Nickyle_Johaar_17606959_task_1
                 return playerCharacter;
             }
             //places weapons on map i used the same approach i took with placement of enemies as seen below
+            // This also allows weapons to switch when the player comes into cotact with a new weapon
             else if (tiletype == TileType.Weapon)
             {
                 int locationOfWeaponsOnMap = roll.Next(1, 5);
 
                 if (locationOfWeaponsOnMap == 1)
                 {
-                    return new meleeweaponClass(TypeOfWeaponUsed.LongBow, "LB", randomizedPositionx, randomizedpositiony);
+                    return new RangedWeaponClass(TypeOfWeaponUsed.LongBow, "LB", randomizedPositionx, randomizedpositiony);
                 }
                 else if (locationOfWeaponsOnMap == 2)
                 {
-                    return new meleeweaponClass(TypeOfWeaponUsed.Rifle, "R", randomizedPositionx, randomizedpositiony);
+                    return new RangedWeaponClass(TypeOfWeaponUsed.Rifle, "R", randomizedPositionx, randomizedpositiony);
                 }
                 else if (locationOfWeaponsOnMap == 3)
                 {
-                    return new RangedWeaponClass(TypeOfWeaponUsed.Dagger, "DG", randomizedPositionx, randomizedpositiony);
+                    return new meleeweaponClass(TypeOfWeaponUsed.Dagger, "DG", randomizedPositionx, randomizedpositiony);
                 }
                 else
                 {
-                    return new RangedWeaponClass(TypeOfWeaponUsed.LongSword, "LS", randomizedPositionx, randomizedpositiony);
+                    return new meleeweaponClass(TypeOfWeaponUsed.LongSword, "LS", randomizedPositionx, randomizedpositiony);
                 }
             }
             else if (tiletype == TileType.Enemy)
@@ -87,7 +88,7 @@ namespace Nickyle_Johaar_17606959_task_1
                 {
                     return new MageClass(randomizedPositionx, randomizedpositiony);
                 }
-                // this allowa the leader to spawn on the map
+                // this allows the leader to spawn on the map
                 else
                 {
                     return new LeaderClass(randomizedPositionx, randomizedpositiony, playerCharacter);

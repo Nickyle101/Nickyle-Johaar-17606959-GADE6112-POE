@@ -135,10 +135,10 @@ namespace Nickyle_Johaar_17606959_task_1
                 goldPickUp += gold.pointsOfGainGold;
             }
             //this the weapon pickup
-            //if (golditem is weaponClass)
-            //{
-            //    EquipWeapon(golditem as weaponClass);
-            //}
+            if (golditem is weaponClass)
+            {
+                EquipWeapon(golditem as weaponClass);
+            }
         }
         // new method for POE to equip weapon
         public void EquipWeapon(weaponClass weaponEquip)

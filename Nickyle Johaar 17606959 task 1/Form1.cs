@@ -24,8 +24,9 @@ namespace Nickyle_Johaar_17606959_task_1
             MapDisplayOutPut();
             PlayerDisplayStatistics();
             purchasedItem = new ShopClass(workingGameEngine.MapDisplay.PlayerCharacter);
-
-            
+            //ItemPurchased.Items.Add(purchasedItem.weaponShopOutputDisplay(0));
+            //ItemPurchased.Items.Add(purchasedItem.weaponShopOutputDisplay(1));
+            //ItemPurchased.Items.Add(purchasedItem.weaponShopOutputDisplay(2));
 
 
         }
@@ -50,7 +51,9 @@ namespace Nickyle_Johaar_17606959_task_1
         {
             purchasedItem.Buy(ItemPurchased.SelectedIndex);
             ItemPurchased.Items.Clear();
-            
+            //ItemPurchased.Items.Add(purchasedItem.weaponShopOutputDisplay(0));
+            //ItemPurchased.Items.Add(purchasedItem.weaponShopOutputDisplay(1));
+            //ItemPurchased.Items.Add(purchasedItem.weaponShopOutputDisplay(2));
             purchasebtn.Enabled = false;
         }
         public void MapDisplayOutPut()
@@ -79,7 +82,15 @@ namespace Nickyle_Johaar_17606959_task_1
 
         private void ItemPurchased_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            //OutPutItemDisplay.Text = purchasedItem.weaponShopOutputDisplay(ItemPurchased.SelectedIndex);
+            //if (!purchasedItem.CanBuyWeapon(ItemPurchased.SelectedIndex))
+            //{
+            //    purchasebtn.Enabled = false;
+            //}
+            //else
+            //{
+            //    purchasebtn.Enabled = true;
+            //}
         }
         public void PlayerDisplayStatistics()
         {
