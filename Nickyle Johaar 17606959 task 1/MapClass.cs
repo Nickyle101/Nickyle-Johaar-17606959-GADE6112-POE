@@ -87,6 +87,7 @@ namespace Nickyle_Johaar_17606959_task_1
                 {
                     return new MageClass(randomizedPositionx, randomizedpositiony);
                 }
+                // this allowa the leader to spawn on the map
                 else
                 {
                     return new LeaderClass(randomizedPositionx, randomizedpositiony, playerCharacter);
