@@ -17,13 +17,13 @@ namespace Nickyle_Johaar_17606959_task_1
         LongBow
 
     }
-    //public enum TileType
-    //{
-    //    Hero,
-    //    Enemy,
-    //    Gold,
-    //    Weapon
-    //}
+    public enum TileType
+    {
+        Hero,
+        Enemy,
+        Gold,
+        Weapon
+    }
     public enum MovementOfCharacter
     {
         NoMovement,
