@@ -9,7 +9,16 @@ namespace Nickyle_Johaar_17606959_task_1
     [Serializable]
     abstract class character : Tile
     {
-       
+        ////this control Character movement
+        //public enum MovementOfCharacter
+        //{
+        //    NoMovement,
+        //    Up,
+        //    Down,
+        //    Left,
+        //    Right
+        //}
+        // this holds the values which the player has
         protected weaponClass weaponItem;
         protected int playerHP;
         protected int playerDamage;

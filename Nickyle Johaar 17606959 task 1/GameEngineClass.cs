@@ -9,14 +9,7 @@ using System.Windows.Forms;
 
 namespace Nickyle_Johaar_17606959_task_1
 {
-    public enum TypeOfWeaponUsed
-    {
-        LongSword,
-        Rifle,
-        Dagger,
-        LongBow
-
-    }
+   
     public enum TileType
     {
         Hero,
