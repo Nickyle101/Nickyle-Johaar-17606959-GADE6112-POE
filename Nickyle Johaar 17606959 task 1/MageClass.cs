@@ -16,7 +16,7 @@ namespace Nickyle_Johaar_17606959_task_1
             PlayerHP = playerhp;
             PlayerDamage = playerdamage;
         }
-        //looting method that makes the mage loot
+        // this the looting method for the mage
         public override void ItemLooted(character SelectedTarget)
         {
             GoldPickUp += SelectedTarget.GoldPickUp;
