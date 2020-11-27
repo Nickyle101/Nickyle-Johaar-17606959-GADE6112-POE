@@ -8,16 +8,16 @@ namespace Nickyle_Johaar_17606959_task_1
 {
     class LeaderClass: enemiesClass
     {
-        //public override MovementOfCharacter ReturnMove(MovementOfCharacter newMovementLocation = 0)
-        //{
-        //    MovementOfCharacter movementLocationOnMap = FollowPlayer(newMovementLocation);
-        //    if (movementLocationOnMap == MovementOfCharacter.NoMovement)
-        //    {
-        //        RandomMovement(newMovementLocation);
-        //    }
+        public override MovementOfCharacter ReturnMove(MovementOfCharacter newMovementLocation = 0)
+        {
+            MovementOfCharacter movementLocationOnMap = FollowPlayer(newMovementLocation);
+            if (movementLocationOnMap == MovementOfCharacter.NoMovement)
+            {
+                RandomMovement(newMovementLocation);
+            }
 
-        //    return newMovementLocation;
-        //}
+            return newMovementLocation;
+        }
         public override string ToString()
         {
             
