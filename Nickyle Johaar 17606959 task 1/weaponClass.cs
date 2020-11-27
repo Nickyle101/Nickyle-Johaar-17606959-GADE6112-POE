@@ -21,6 +21,7 @@ namespace Nickyle_Johaar_17606959_task_1
         {
 
         }
+        //this are the accessors for the weapons within the game
         public TypeOfWeaponUsed WeaponSelectionType
         {
             get { return weaponSelectionType; }
